@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.monacoin.Monacoin-Qt";
+        return @"org.hanacoin.Hanacoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }
@@ -78,7 +78,7 @@ MacNotificationHandler *MacNotificationHandler::instance()
     static MacNotificationHandler *s_instance = NULL;
     if (!s_instance) {
         s_instance = new MacNotificationHandler();
-        
+
         Class aPossibleClass = objc_getClass("NSBundle");
         if (aPossibleClass) {
             // change NSBundle -bundleIdentifier method to return a correct bundle identifier

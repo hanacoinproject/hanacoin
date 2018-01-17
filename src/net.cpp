@@ -1479,7 +1479,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Monacoin " + FormatFullVersion();
+        std::string strDesc = "Hanacoin " + FormatFullVersion();
 
         try {
             while (true) {

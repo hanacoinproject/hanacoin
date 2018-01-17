@@ -1,10 +1,10 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to monacoin-core.
+This issue tracker is only for technical issues related to hanacoin-core.
 
-General monacoin questions and/or support requests and are best directed to the [monacointalk.io forums](https://monacointalk.io/).
+General hanacoin questions and/or support requests and are best directed to the [hanacointalk.io forums](https://hanacointalk.io/).
 
-For reporting security issues, please contact the Monacoin developers on the #monacoin-dev Freenode IRC channel or alternatively you can email us at contact@monacoin.org.
+For reporting security issues, please contact the Hanacoin developers on the #hanacoin-dev Freenode IRC channel or alternatively you can email us at contact@hanacoin.org.
 
 ### Describe the issue
 
@@ -23,7 +23,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of monacoin-core are you using?
+### What version of hanacoin-core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA.
 
 ### Machine specs:

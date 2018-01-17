@@ -443,7 +443,7 @@ class SegWitTest(BitcoinTestFramework):
         block = self.build_next_block()
 
         assert(len(self.utxo) > 0)
-        
+
         # Create a P2WSH transaction.
         # The witness program will be a bunch of OP_2DROP's, followed by OP_TRUE.
         # This should give us plenty of room to tweak the spending tx's
@@ -555,7 +555,7 @@ class SegWitTest(BitcoinTestFramework):
         self.log.info("Testing extra witness data in tx")
 
         assert(len(self.utxo) > 0)
-        
+
         block = self.build_next_block()
 
         witness_program = CScript([OP_DROP, OP_TRUE])
@@ -723,7 +723,7 @@ class SegWitTest(BitcoinTestFramework):
         witness_program = CScript([OP_DROP, OP_TRUE])
         witness_hash = sha256(witness_program)
         scriptPubKey = CScript([OP_0, witness_hash])
-        
+
         # Create a transaction that splits our utxo into many outputs
         tx = CTransaction()
         tx.vin.append(CTxIn(COutPoint(self.utxo[0].sha256, self.utxo[0].n), b""))
@@ -956,7 +956,7 @@ class SegWitTest(BitcoinTestFramework):
         assert(self.test_node.last_message["getdata"].inv[0].type == blocktype)
         self.test_node.test_witness_block(block1, True)
 
-        # Monacoin: Blocks with nVersion < VB_TOP_BITS are rejected
+        # Hanacoin: Blocks with nVersion < VB_TOP_BITS are rejected
 
         # self.test_node.announce_block_and_wait_for_getdata(block2, use_header=True)
         # assert(self.test_node.last_message["getdata"].inv[0].type == blocktype)
@@ -1013,7 +1013,7 @@ class SegWitTest(BitcoinTestFramework):
             assert_equal(rpc_details["weight"], weight)
 
             # Upgraded node should not ask for blocks from unupgraded
-            # Monacoin: Blocks with nVersion < VB_TOP_BITS are rejected
+            # Hanacoin: Blocks with nVersion < VB_TOP_BITS are rejected
             block4 = self.build_next_block(nVersion=(VB_TOP_BITS | (1<<15)))
             block4.solve()
             self.old_node.getdataset = set()
@@ -1568,7 +1568,7 @@ class SegWitTest(BitcoinTestFramework):
             tx2.wit.vtxinwit.append(CTxInWitness())
             tx2.wit.vtxinwit[-1].scriptWitness.stack = [ witness_program ]
             total_value += tx.vout[i].nValue
-        tx2.wit.vtxinwit[-1].scriptWitness.stack = [ witness_program_toomany ] 
+        tx2.wit.vtxinwit[-1].scriptWitness.stack = [ witness_program_toomany ]
         tx2.vout.append(CTxOut(total_value, CScript([OP_TRUE])))
         tx2.rehash()
 
@@ -1947,7 +1947,7 @@ class SegWitTest(BitcoinTestFramework):
         self.test_premature_coinbase_witness_spend()
         self.test_uncompressed_pubkey()
         self.test_signature_version_1()
-        # Monacoin: Disable test due to occasional travis issue
+        # Hanacoin: Disable test due to occasional travis issue
         #self.test_non_standard_witness()
         sync_blocks(self.nodes)
         self.test_upgrade_after_activation(node_id=2)

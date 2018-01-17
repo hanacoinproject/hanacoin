@@ -130,8 +130,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Monacoin address</source>
-        <translation>Пошаљите новац на monacoin адресу</translation>
+        <source>Send coins to a Hanacoin address</source>
+        <translation>Пошаљите новац на hanacoin адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
