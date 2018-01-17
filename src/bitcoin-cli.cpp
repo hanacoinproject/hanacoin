@@ -49,7 +49,7 @@ std::string HelpMessageCli()
     strUsage += HelpMessageOpt("-rpcclienttimeout=<n>", strprintf(_("Timeout in seconds during HTTP requests, or 0 for no timeout. (default: %d)"), DEFAULT_HTTP_CLIENT_TIMEOUT));
     strUsage += HelpMessageOpt("-stdinrpcpass", strprintf(_("Read RPC password from standard input as a single line.  When combined with -stdin, the first line from standard input is used for the RPC password.")));
     strUsage += HelpMessageOpt("-stdin", _("Read extra arguments from standard input, one per line until EOF/Ctrl-D (recommended for sensitive information such as passphrases).  When combined with -stdinrpcpass, the first line from standard input is used for the RPC password."));
-    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in monacoind directory, required if monacoind/-Qt runs with multiple wallets)"));
+    strUsage += HelpMessageOpt("-rpcwallet=<walletname>", _("Send RPC for non-default wallet on RPC server (argument is wallet filename in hanacoind directory, required if hanacoind/-Qt runs with multiple wallets)"));
 
     return strUsage;
 }
@@ -87,10 +87,10 @@ static int AppInitRPC(int argc, char* argv[])
         std::string strUsage = strprintf(_("%s RPC client version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n";
         if (!gArgs.IsArgSet("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  monacoin-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
-                  "  monacoin-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
-                  "  monacoin-cli [options] help                " + _("List commands") + "\n" +
-                  "  monacoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  hanacoin-cli [options] <command> [params]  " + strprintf(_("Send command to %s"), _(PACKAGE_NAME)) + "\n" +
+                  "  hanacoin-cli [options] -named <command> [name=value] ... " + strprintf(_("Send command to %s (with named arguments)"), _(PACKAGE_NAME)) + "\n" +
+                  "  hanacoin-cli [options] help                " + _("List commands") + "\n" +
+                  "  hanacoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }
@@ -444,7 +444,7 @@ int CommandLineRPC(int argc, char *argv[])
                             strPrint += "error message:\n"+errMsg.get_str();
 
                         if (errCode.isNum() && errCode.get_int() == RPC_WALLET_NOT_SPECIFIED) {
-                            strPrint += "\nTry adding \"-rpcwallet=<filename>\" option to monacoin-cli command line.";
+                            strPrint += "\nTry adding \"-rpcwallet=<filename>\" option to hanacoin-cli command line.";
                         }
                     }
                 } else {

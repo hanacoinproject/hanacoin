@@ -86,7 +86,7 @@ class P2PConnection(asyncore.dispatcher):
         self.network = net
         self.disconnect = False
 
-        logger.info('Connecting to Monacoin Node: %s:%d' % (self.dstaddr, self.dstport))
+        logger.info('Connecting to Hanacoin Node: %s:%d' % (self.dstaddr, self.dstport))
 
         try:
             self.connect((dstaddr, dstport))

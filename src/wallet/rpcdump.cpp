@@ -62,7 +62,7 @@ std::string DecodeDumpString(const std::string &str) {
     for (unsigned int pos = 0; pos < str.length(); pos++) {
         unsigned char c = str[pos];
         if (c == '%' && pos+2 < str.length()) {
-            c = (((str[pos+1]>>6)*9+((str[pos+1]-'0')&15)) << 4) | 
+            c = (((str[pos+1]>>6)*9+((str[pos+1]-'0')&15)) << 4) |
                 ((str[pos+2]>>6)*9+((str[pos+2]-'0')&15));
             pos += 2;
         }
@@ -314,7 +314,7 @@ UniValue importaddress(const JSONRPCRequest& request)
             std::vector<unsigned char> data(ParseHex(request.params[0].get_str()));
             ImportScript(pwallet, CScript(data.begin(), data.end()), strLabel, fP2SH);
         } else {
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Monacoin address or script");
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Hanacoin address or script");
         }
     }
     if (fRescan)
@@ -633,7 +633,7 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
             "\nReveals the private key corresponding to 'address'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"address\"   (string, required) The monacoin address for the private key\n"
+            "1. \"address\"   (string, required) The hanacoin address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n"
@@ -649,7 +649,7 @@ UniValue dumpprivkey(const JSONRPCRequest& request)
     std::string strAddress = request.params[0].get_str();
     CTxDestination dest = DecodeDestination(strAddress);
     if (!IsValidDestination(dest)) {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Monacoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Hanacoin address");
     }
     auto keyid = GetKeyForDestination(*pwallet, dest);
     if (keyid.IsNull()) {
@@ -678,7 +678,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
             "Note that if your wallet contains keys which are not derived from your HD seed (e.g. imported keys), these are not covered by\n"
             "only backing up the seed itself, and must be backed up too (e.g. ensure you back up the whole dumpfile).\n"
             "\nArguments:\n"
-            "1. \"filename\"    (string, required) The filename with path (either absolute or relative to monacoind)\n"
+            "1. \"filename\"    (string, required) The filename with path (either absolute or relative to hanacoind)\n"
             "\nResult:\n"
             "{                           (json object)\n"
             "  \"filename\" : {        (string) The filename with full absolute path\n"
@@ -727,7 +727,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-    file << strprintf("# Wallet dump created by Monacoin %s\n", CLIENT_BUILD);
+    file << strprintf("# Wallet dump created by Hanacoin %s\n", CLIENT_BUILD);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(chainActive.Tip()->GetBlockTime()));
@@ -1260,7 +1260,7 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
                                       "block from time %d, which is after or within %d seconds of key creation, and "
                                       "could contain transactions pertaining to the key. As a result, transactions "
                                       "and coins using this key may not appear in the wallet. This error could be "
-                                      "caused by pruning or data corruption (see monacoind log for details) and could "
+                                      "caused by pruning or data corruption (see hanacoind log for details) and could "
                                       "be dealt with by downloading and rescanning the relevant blocks (see -reindex "
                                       "and -rescan options).",
                                 GetImportTimestamp(request, now), scannedTime - TIMESTAMP_WINDOW - 1, TIMESTAMP_WINDOW)));

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Monacoin"
-            VALUE "FileDescription",    "monacoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "Hanacoin"
+            VALUE "FileDescription",    "hanacoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "monacoin-cli"
+            VALUE "InternalName",       "hanacoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "monacoin-cli.exe"
-            VALUE "ProductName",        "monacoin-cli"
+            VALUE "OriginalFilename",   "hanacoin-cli.exe"
+            VALUE "ProductName",        "hanacoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

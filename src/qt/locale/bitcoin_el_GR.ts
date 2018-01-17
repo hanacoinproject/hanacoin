@@ -62,12 +62,12 @@
         <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>
-        <source>These are your Monacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Αυτές είναι οι Monacoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
+        <source>These are your Hanacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Αυτές είναι οι Hanacoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
     <message>
-        <source>These are your Monacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Αυτές είναι οι Monacoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
+        <source>These are your Hanacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Αυτές είναι οι Hanacoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Επιβεβαίωσε κρυπτογράφηση πορτοφολιού</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONACOINS&lt;/b&gt;!</source>
-        <translation>Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ MONACOIN &lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HANACOINS&lt;/b&gt;!</source>
+        <translation>Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ HANACOIN &lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@
         <translation>Πορτοφόλι κρυπτογραφήθηκε</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your monacoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπτογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα monacoin σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your hanacoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπτογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα hanacoin σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -290,8 +290,8 @@
         <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρό δίσκο...</translation>
     </message>
     <message>
-        <source>Send coins to a Monacoin address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση monacoin</translation>
+        <source>Send coins to a Hanacoin address</source>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση hanacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin</translation>
+        <source>Hanacoin</source>
+        <translation>Hanacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Κρυπτογραφήστε τα ιδιωτικά κλειδιά που ανήκουν στο πορτοφόλι σας </translation>
     </message>
     <message>
-        <source>Sign messages with your Monacoin addresses to prove you own them</source>
+        <source>Sign messages with your Hanacoin addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Monacoin addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Monacoin</translation>
+        <source>Verify messages to ensure they were signed with specified Hanacoin addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Hanacoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,8 +366,8 @@
         <translation>Εργαλειοθήκη καρτελών</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monacoin: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις monacoin: )</translation>
+        <source>Request payments (generates QR codes and hanacoin: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις hanacoin: )</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -378,8 +378,8 @@
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a monacoin: URI or payment request</source>
-        <translation>Άνοιγμα monacoin: URI αίτησης πληρωμής</translation>
+        <source>Open a hanacoin: URI or payment request</source>
+        <translation>Άνοιγμα hanacoin: URI αίτησης πληρωμής</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -667,8 +667,8 @@
         <translation>Προσαρμογή του φακέλου δεδομένων: </translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin</translation>
+        <source>Hanacoin</source>
+        <translation>Hanacoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -804,16 +804,16 @@
         <translation>&amp;Ξόδεμα μη επικυρωμένων ρέστων</translation>
     </message>
     <message>
-        <source>Automatically open the Monacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Monacoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the Hanacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών Hanacoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Απόδοση θυρών με χρήστη &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Monacoin network through a SOCKS5 proxy.</source>
-        <translation>Σύνδεση στο δίκτυο Monacoin μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <source>Connect to the Hanacoin network through a SOCKS5 proxy.</source>
+        <translation>Σύνδεση στο δίκτυο Hanacoin μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -911,8 +911,8 @@
         <translation>Φόρμα</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Monacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Monacoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hanacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Hanacoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -986,8 +986,8 @@
         <translation>Σφάλμα αίτησης πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start monacoin: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του monacoin: χειριστής click-to-pay</translation>
+        <source>Cannot start hanacoin: click-to-pay handler</source>
+        <translation>Δεν είναι δυνατή η εκκίνηση του hanacoin: χειριστής click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1020,8 +1020,8 @@
         <translation>Ποσό</translation>
     </message>
     <message>
-        <source>Enter a Monacoin address (e.g. %1)</source>
-        <translation>Εισάγετε μια διεύθυνση Monacoin (π.χ. %1)</translation>
+        <source>Enter a Hanacoin address (e.g. %1)</source>
+        <translation>Εισάγετε μια διεύθυνση Hanacoin (π.χ. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1468,8 +1468,8 @@
         <translation>Αυτή είναι μια απλή πληρωμή.</translation>
     </message>
     <message>
-        <source>The Monacoin address to send the payment to</source>
-        <translation>Η διεύθυνση Monacoin που θα σταλεί η πληρωμή</translation>
+        <source>The Hanacoin address to send the payment to</source>
+        <translation>Η διεύθυνση Hanacoin που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1525,8 +1525,8 @@
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>The Monacoin address to sign the message with</source>
-        <translation>Διεύθυνση Monacoin που θα σταλεί το μήνυμα</translation>
+        <source>The Hanacoin address to sign the message with</source>
+        <translation>Διεύθυνση Hanacoin που θα σταλεί το μήνυμα</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1557,8 +1557,8 @@
         <translation>Αντιγραφή της επιλεγμένης υπογραφής στο πρόχειρο του συστήματος</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Monacoin address</source>
-        <translation>Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση Monacoin</translation>
+        <source>Sign the message to prove you own this Hanacoin address</source>
+        <translation>Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση Hanacoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1577,12 +1577,12 @@
         <translation>&amp;Επιβεβαίωση Mηνύματος</translation>
     </message>
     <message>
-        <source>The Monacoin address the message was signed with</source>
-        <translation>Διεύθυνση Monacoin με την οποία έχει υπογραφεί το μήνυμα</translation>
+        <source>The Hanacoin address the message was signed with</source>
+        <translation>Διεύθυνση Hanacoin με την οποία έχει υπογραφεί το μήνυμα</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Monacoin address</source>
-        <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Monacoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Hanacoin address</source>
+        <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Hanacoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1794,8 +1794,8 @@
         <translation>Εκτέλεση στο παρασκήνιο και αποδοχή εντολών</translation>
     </message>
     <message>
-        <source>Monacoin Core</source>
-        <translation>Monacoin Core</translation>
+        <source>Hanacoin Core</source>
+        <translation>Hanacoin Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

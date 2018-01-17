@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisissez une adresse où envoyer les monacoins</translation>
+        <translation>Choisissez une adresse où envoyer les hanacoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les monacoins</translation>
+        <translation>Choisissez une adresse où recevoir les hanacoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your Monacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ceci sont vos addresses Monacoin pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
+        <source>These are your Hanacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ceci sont vos addresses Hanacoin pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
     </message>
     <message>
-        <source>These are your Monacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ceci sont vos addresses Monacoin pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
+        <source>These are your Hanacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ceci sont vos addresses Hanacoin pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Confirmer le chiffrement du porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONACOINS&lt;/b&gt;!</source>
-        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS MONACOINS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HANACOINS&lt;/b&gt;!</source>
+        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS HANACOINS&lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,7 +184,7 @@
         <translation>Portefeuille chiffré</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your monacoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your hanacoins from being stolen by malware infecting your computer.</source>
         <translation>%1 va à présent se fermer pour terminer la procédure de cryptage. N'oubliez pas que le chiffrement de votre porte-monnaie ne peut pas fournir une protection totale contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
     </message>
     <message>
@@ -342,8 +342,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Monacoin address</source>
-        <translation>Envoyer des pièces à une adresse Monacoin</translation>
+        <source>Send coins to a Hanacoin address</source>
+        <translation>Envoyer des pièces à une adresse Hanacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -366,8 +366,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin</translation>
+        <source>Hanacoin</source>
+        <translation>Hanacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -394,12 +394,12 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Monacoin addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Monacoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Hanacoin addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Hanacoin pour prouver que vous les détenez</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Monacoin addresses</source>
-        <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Monacoin spécifiées</translation>
+        <source>Verify messages to ensure they were signed with specified Hanacoin addresses</source>
+        <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Hanacoin spécifiées</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -418,8 +418,8 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monacoin: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et monacoin: URIs)</translation>
+        <source>Request payments (generates QR codes and hanacoin: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et hanacoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -430,16 +430,16 @@
         <translation>Afficher la liste des labels et adresses de réception utilisées</translation>
     </message>
     <message>
-        <source>Open a monacoin: URI or payment request</source>
-        <translation>Ouvrir un monacoin: URI ou demande de paiement</translation>
+        <source>Open a hanacoin: URI or payment request</source>
+        <translation>Ouvrir un hanacoin: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Monacoin network</source>
-        <translation><numerusform>%n connexion active avec le réseau Monacoin</numerusform><numerusform>%n connexions actives avec le réseau Monacoin</numerusform></translation>
+        <source>%n active connection(s) to Hanacoin network</source>
+        <translation><numerusform>%n connexion active avec le réseau Hanacoin</numerusform><numerusform>%n connexions actives avec le réseau Hanacoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -478,8 +478,8 @@
         <translation>À jour</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Monacoin command-line options</source>
-        <translation>Afficher le %1 message d'aide pour récupérer une liste des options de ligne de commande Monacoin</translation>
+        <source>Show the %1 help message to get a list with possible Hanacoin command-line options</source>
+        <translation>Afficher le %1 message d'aide pour récupérer une liste des options de ligne de commande Hanacoin</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -548,8 +548,8 @@
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Monacoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a eu lieu. Monacoin ne peut plus continuer en toute sécurité et va s'éteindre</translation>
+        <source>A fatal error occurred. Hanacoin can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a eu lieu. Hanacoin ne peut plus continuer en toute sécurité et va s'éteindre</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@
         <translation>Éditer l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Monacoin address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Monacoin valide.</translation>
+        <source>The entered address "%1" is not a valid Hanacoin address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Hanacoin valide.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -847,8 +847,8 @@
         <translation>Utiliser votre propre répertoire</translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin</translation>
+        <source>Hanacoin</source>
+        <translation>Hanacoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -944,8 +944,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Monacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Monacoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Hanacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Hanacoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1144,8 +1144,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Monacoin address (e.g. %1)</source>
-        <translation>Entrer une adresse Monacoin (e.g. %1)</translation>
+        <source>Enter a Hanacoin address (e.g. %1)</source>
+        <translation>Entrer une adresse Hanacoin (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1709,8 +1709,8 @@
         <translation>Payer seulement les frais obligatoire de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Monacoin address</source>
-        <translation>Attention: Adresse Monacoin Invalide</translation>
+        <source>Warning: Invalid Hanacoin address</source>
+        <translation>Attention: Adresse Hanacoin Invalide</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2298,8 +2298,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Monacoin Core</source>
-        <translation>Monacoin Core</translation>
+        <source>Hanacoin Core</source>
+        <translation>Hanacoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

@@ -213,7 +213,7 @@ def main():
     logging.basicConfig(format='%(message)s', level=logging_level)
 
     # Create base test directory
-    tmpdir = "%s/monacoin_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+    tmpdir = "%s/hanacoin_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     os.makedirs(tmpdir)
 
     logging.debug("Temporary test directory at %s" % tmpdir)
@@ -229,7 +229,7 @@ def main():
         sys.exit(0)
 
     if not (enable_wallet and enable_utils and enable_bitcoind):
-        print("No functional tests to run. Wallet, utils, and monacoind must all be enabled")
+        print("No functional tests to run. Wallet, utils, and hanacoind must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -284,8 +284,8 @@ def main():
 def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[], combined_logs_len=0):
     # Warn if bitcoind is already running (unix only)
     try:
-        if subprocess.check_output(["pidof", "monacoind"]) is not None:
-            print("%sWARNING!%s There is already a monacoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+        if subprocess.check_output(["pidof", "hanacoind"]) is not None:
+            print("%sWARNING!%s There is already a hanacoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -295,9 +295,9 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
         print("%sWARNING!%s There is a cache directory here: %s. If tests fail unexpectedly, try deleting the cache directory." % (BOLD[1], BOLD[0], cache_dir))
 
     #Set env vars
-    if "MONACOIND" not in os.environ:
-        os.environ["MONACOIND"] = build_dir + '/src/monacoind' + exeext
-        os.environ["MONACOINCLI"] = build_dir + '/src/monacoin-cli' + exeext
+    if "HANACOIND" not in os.environ:
+        os.environ["HANACOIND"] = build_dir + '/src/hanacoind' + exeext
+        os.environ["HANACOINCLI"] = build_dir + '/src/hanacoin-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -512,7 +512,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `monacoin-cli help` (`rpc_interface.txt`).
+    commands per `hanacoin-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.
