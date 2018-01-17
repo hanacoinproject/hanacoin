@@ -298,8 +298,8 @@
         <translation>بازنشانی بلوک‌ها روی دیسک...</translation>
     </message>
     <message>
-        <source>Send coins to a Monacoin address</source>
-        <translation>ارسال وجه به نشانی Monacoin</translation>
+        <source>Send coins to a Hanacoin address</source>
+        <translation>ارسال وجه به نشانی Hanacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>با&amp;زبینی پیام...</translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin</translation>
+        <source>Hanacoin</source>
+        <translation>Hanacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +350,12 @@
         <translation>رمزنگاری کلیدهای خصوصی متعلق به کیف پول شما</translation>
     </message>
     <message>
-        <source>Sign messages with your Monacoin addresses to prove you own them</source>
-        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی Monacoin خود امضا کنید</translation>
+        <source>Sign messages with your Hanacoin addresses to prove you own them</source>
+        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی Hanacoin خود امضا کنید</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Monacoin addresses</source>
-        <translation>برای حصول اطمینان از اینکه پیام با نشانی Monacoin مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+        <source>Verify messages to ensure they were signed with specified Hanacoin addresses</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی Hanacoin مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -374,8 +374,8 @@
         <translation>نوارابزار برگه‌ها</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monacoin: URIs)</source>
-        <translation>درخواست پرداخت ( تولید کد کیوار و ادرس monacoin)</translation>
+        <source>Request payments (generates QR codes and hanacoin: URIs)</source>
+        <translation>درخواست پرداخت ( تولید کد کیوار و ادرس hanacoin)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -386,16 +386,16 @@
         <translation>نمایش لیست آدرس های دریافت و لیبل ها</translation>
     </message>
     <message>
-        <source>Open a monacoin: URI or payment request</source>
-        <translation>بازکردن یک monacoin: آدرس یا درخواست پرداخت</translation>
+        <source>Open a hanacoin: URI or payment request</source>
+        <translation>بازکردن یک hanacoin: آدرس یا درخواست پرداخت</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>گزینه‌های خط‌فرمان</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Monacoin network</source>
-        <translation><numerusform>%n ارتباط فعال با شبکهٔ Monacoin</numerusform></translation>
+        <source>%n active connection(s) to Hanacoin network</source>
+        <translation><numerusform>%n ارتباط فعال با شبکهٔ Hanacoin</numerusform></translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
@@ -642,8 +642,8 @@
         <translation>ویرایش آدرس قرستنده</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Monacoin address.</source>
-        <translation>نشانی وارد شده "%1" یک نشانی معتبر Monacoin نیست.</translation>
+        <source>The entered address "%1" is not a valid Hanacoin address.</source>
+        <translation>نشانی وارد شده "%1" یک نشانی معتبر Hanacoin نیست.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -852,8 +852,8 @@
         <translation>استخراج</translation>
     </message>
     <message>
-        <source>Automatically open the Monacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>باز کردن خودکار درگاه شبکهٔ Monacoin روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
+        <source>Automatically open the Hanacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>باز کردن خودکار درگاه شبکهٔ Hanacoin روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -951,8 +951,8 @@
         <translation>فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Monacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ Monacoin همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hanacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ Hanacoin همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1016,8 +1016,8 @@
         <translation>مبلغ</translation>
     </message>
     <message>
-        <source>Enter a Monacoin address (e.g. %1)</source>
-        <translation>یک آدرس Monacoin وارد کنید (مثلاً %1)</translation>
+        <source>Enter a Hanacoin address (e.g. %1)</source>
+        <translation>یک آدرس Hanacoin وارد کنید (مثلاً %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1476,8 +1476,8 @@
         <translation>این یک پرداخت عادی است</translation>
     </message>
     <message>
-        <source>The Monacoin address to send the payment to</source>
-        <translation>نشانی Monacoin برای ارسال پرداخت به آن</translation>
+        <source>The Hanacoin address to send the payment to</source>
+        <translation>نشانی Hanacoin برای ارسال پرداخت به آن</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1529,8 +1529,8 @@
         <translation>ا&amp;مضای پیام</translation>
     </message>
     <message>
-        <source>The Monacoin address to sign the message with</source>
-        <translation>نشانی Monacoin برای امضاء پیغام با آن</translation>
+        <source>The Hanacoin address to sign the message with</source>
+        <translation>نشانی Hanacoin برای امضاء پیغام با آن</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1561,7 +1561,7 @@
         <translation>امضای فعلی را به حافظهٔ سیستم کپی کن</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Monacoin address</source>
+        <source>Sign the message to prove you own this Hanacoin address</source>
         <translation>برای اثبات تعلق این نشانی به شما، پیام را امضا کنید</translation>
     </message>
     <message>
@@ -1581,12 +1581,12 @@
         <translation>&amp;شناسایی پیام</translation>
     </message>
     <message>
-        <source>The Monacoin address the message was signed with</source>
-        <translation>نشانی Monacoin که پیغام با آن امضاء شده</translation>
+        <source>The Hanacoin address the message was signed with</source>
+        <translation>نشانی Hanacoin که پیغام با آن امضاء شده</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Monacoin address</source>
-        <translation>برای حصول اطمینان از اینکه پیام با نشانی Monacoin مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+        <source>Verify the message to ensure it was signed with the specified Hanacoin address</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی Hanacoin مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1702,8 +1702,8 @@
         <translation>اجرا در پشت زمینه به‌صورت یک سرویس و پذیرش دستورات</translation>
     </message>
     <message>
-        <source>Monacoin Core</source>
-        <translation> هسته Monacoin </translation>
+        <source>Hanacoin Core</source>
+        <translation> هسته Hanacoin </translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

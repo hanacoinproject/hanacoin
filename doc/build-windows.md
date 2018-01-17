@@ -1,7 +1,7 @@
 WINDOWS BUILD NOTES
 ====================
 
-Below are some notes on how to build Monacoin Core for Windows.
+Below are some notes on how to build Hanacoin Core for Windows.
 
 Most developers use cross-compilation from Ubuntu to build executables for
 Windows. This is also used to build the release binaries.
@@ -78,7 +78,7 @@ Then build using:
 
 To build executables for Windows 32-bit, install the following dependencies:
 
-    sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev 
+    sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
 Then build using:
 
@@ -99,6 +99,6 @@ Installation
 After building using the Windows subsystem it can be useful to copy the compiled
 executables to a directory on the windows drive in the same directory structure
 as they appear in the release `.zip` archive. This can be done in the following
-way. This will install to `c:\workspace\monacoin`, for example:
+way. This will install to `c:\workspace\hanacoin`, for example:
 
-    make install DESTDIR=/mnt/c/workspace/monacoin
+    make install DESTDIR=/mnt/c/workspace/hanacoin

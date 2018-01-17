@@ -75,7 +75,7 @@ public:
         consensus.BIP34Hash = uint256S("ff9f1c0116d19de7c9963845e129f9ed1bfc0b376eb54fd7afa42e0d418c8bb6");
         consensus.BIP65Height = 977759;
         consensus.BIP66Height = 977759;
-        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
+        consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 1.1 * 24 * 60 * 60; // 1.1 days
         consensus.nPowTargetSpacing = 1.5 * 60; // 1.5 minutes
         consensus.nPowTargetTimespanDigisheld = 1.5 * 60;
@@ -127,7 +127,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x35e405a8a46f4dbc1941727aaf338939323c3b955232d0317f8731fe07ac4ba6"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("monacoin.org", "dnsseed.monacoin.org"));
+        vSeeds.push_back(CDNSSeedData("hanacoin.org", "dnsseed.hanacoin.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50);  // M
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -235,7 +235,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("monacoin.org", "testnet-dnsseed.monacoin.org"));
+        vSeeds.push_back(CDNSSeedData("hanacoin.org", "testnet-dnsseed.hanacoin.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -328,7 +328,7 @@ public:
         fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
-        fMineBlocksOnDemand = true; 
+        fMineBlocksOnDemand = true;
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of

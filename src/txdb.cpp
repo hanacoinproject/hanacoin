@@ -25,7 +25,7 @@ static const char DB_REINDEX_FLAG = 'R';
 static const char DB_LAST_BLOCK = 'l';
 
 
-CCoinsViewDB::CCoinsViewDB(size_t nCacheSize, bool fMemory, bool fWipe) : db(GetDataDir() / "chainstate", nCacheSize, fMemory, fWipe, true) 
+CCoinsViewDB::CCoinsViewDB(size_t nCacheSize, bool fMemory, bool fWipe) : db(GetDataDir() / "chainstate", nCacheSize, fMemory, fWipe, true)
 {
 }
 
@@ -197,11 +197,11 @@ bool CBlockTreeDB::LoadBlockIndexGuts(boost::function<CBlockIndex*(const uint256
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
-                // Monacoin: Disable PoW Sanity check while loading block index from disk.
+                // Hanacoin: Disable PoW Sanity check while loading block index from disk.
                 // We use the sha256 hash for the block index for performance reasons, which is recorded for later use.
                 // CheckProofOfWork() uses the scrypt hash which is discarded after a block is accepted.
                 // While it is technically feasible to verify the PoW, doing so takes several minutes as it
-                // requires recomputing every PoW hash during every Monacoin startup.
+                // requires recomputing every PoW hash during every Hanacoin startup.
                 // We opt instead to simply trust the data that is on your local disk.
                 //if (!CheckProofOfWork(pindexNew->GetBlockHash(), pindexNew->nBits, Params().GetConsensus()))
                 //    return error("LoadBlockIndex(): CheckProofOfWork failed: %s", pindexNew->ToString());

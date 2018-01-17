@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Monacoin Core has an internal benchmarking framework, with benchmarks
+Hanacoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling monacoin-core, the benchmarks can be run with:
-`src/bench/bench_monacoin`
+After compiling hanacoin-core, the benchmarks can be run with:
+`src/bench/bench_hanacoin`
 
 The output will look similar to:
 ```

@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #
-# Test new Monacoin multisig prefix functionality.
+# Test new Hanacoin multisig prefix functionality.
 #
 
 from test_framework.test_framework import BitcoinTestFramework
@@ -73,7 +73,7 @@ class ScriptAddress2Test(BitcoinTestFramework):
         multisig_addr_new = self.nodes[0].addmultisigaddress(2, addrs, "multisigaccount2")
         assert_equal(multisig_addr_new, "QZ974ZrPrmqMmm1PSVp4m8YEgo3bCQZBbe")
         multisig_addr_old = "2N5nLwYz9qfnGdaFLpPn3gS6oYQbmLTWPjq"
-        
+
         ## Let's send to the old address. We can then find it in the
         ## new address with the new client. So basically the old
         ## address and the new one are the same thing.

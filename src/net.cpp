@@ -1466,7 +1466,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Monacoin " + FormatFullVersion();
+        std::string strDesc = "Hanacoin " + FormatFullVersion();
 
         try {
             while (true) {
@@ -1750,9 +1750,9 @@ void CConnman::ThreadOpenConnections()
         //  * Increase the number of connectable addresses in the tried table.
         //
         // Method:
-        //  * Choose a random address from new and attempt to connect to it if we can connect 
+        //  * Choose a random address from new and attempt to connect to it if we can connect
         //    successfully it is added to tried.
-        //  * Start attempting feeler connections only after node finishes making outbound 
+        //  * Start attempting feeler connections only after node finishes making outbound
         //    connections.
         //  * Only make a feeler connection once every few minutes.
         //

@@ -1,41 +1,41 @@
-Monacoin Core 0.14.2
+Hanacoin Core 0.14.2
 =====================
 
 Setup
 ---------------------
-Monacoin Core is the original Monacoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Monacoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Hanacoin Core is the original Hanacoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Hanacoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Monacoin Core, visit [monacoin.org](https://monacoin.org).
+To download Hanacoin Core, visit [hanacoin.org](https://hanacoin.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Monacoin on your native platform.
+The following are some helpful notes on how to run Hanacoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/monacoin-qt` (GUI) or
-- `bin/monacoind` (headless)
+- `bin/hanacoin-qt` (GUI) or
+- `bin/hanacoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run monacoin-qt.exe.
+Unpack the files into a directory, and then run hanacoin-qt.exe.
 
 ### OS X
 
-Drag Monacoin-Core to your applications folder, and then run Monacoin-Core.
+Drag Hanacoin-Core to your applications folder, and then run Hanacoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Monacoin Wiki](https://monacoin.info/)
+* See the documentation at the [Hanacoin Wiki](https://hanacoin.info/)
 for help and more information.
-* Ask for help on [#monacoin](http://webchat.freenode.net?channels=monacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=monacoin).
-* Ask for help on the [MonacoinTalk](https://monacointalk.io/) forums.
+* Ask for help on [#hanacoin](http://webchat.freenode.net?channels=hanacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=hanacoin).
+* Ask for help on the [HanacoinTalk](https://hanacointalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Monacoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Hanacoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Monacoin on your native platfo
 
 Development
 ---------------------
-The Monacoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Hanacoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/monacoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/hanacoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The Monacoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [MonacoinTalk](https://monacointalk.io/) forums.
-* Discuss general Monacoin development on #monacoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=monacoin-dev).
+* Discuss on the [HanacoinTalk](https://hanacointalk.io/) forums.
+* Discuss general Hanacoin development on #hanacoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=hanacoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

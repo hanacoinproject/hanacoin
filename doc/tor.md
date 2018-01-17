@@ -1,16 +1,16 @@
-TOR SUPPORT IN MONACOIN
+TOR SUPPORT IN HANACOIN
 ======================
 
-It is possible to run Monacoin as a Tor hidden service, and connect to such services.
+It is possible to run Hanacoin as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many distributions default to having a SOCKS proxy listening on port 9050, but others may not. In particular, the Tor Browser Bundle defaults to listening on port 9150. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort) for how to properly
 configure Tor.
 
 
-1. Run monacoin behind a Tor proxy
+1. Run hanacoin behind a Tor proxy
 ---------------------------------
 
-The first step is running Monacoin behind a Tor proxy. This will already make all
+The first step is running Hanacoin behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 
 	-proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -31,27 +31,27 @@ outgoing connections be anonymized, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./monacoin -proxy=127.0.0.1:9050
+	./hanacoin -proxy=127.0.0.1:9050
 
 
-2. Run a monacoin hidden server
+2. Run a hanacoin hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
-	HiddenServiceDir /var/lib/tor/monacoin-service/
+	HiddenServiceDir /var/lib/tor/hanacoin-service/
 	HiddenServicePort 9401 127.0.0.1:9401
 	HiddenServicePort 19403 127.0.0.1:19403
 
 The directory can be different of course, but (both) port numbers should be equal to
-your monacoind's P2P listen port (9401 by default).
+your hanacoind's P2P listen port (9401 by default).
 
-	-externalip=X   You can tell monacoin about its publicly reachable address using
+	-externalip=X   You can tell hanacoin about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/monacoin-service/hostname. Onion addresses are given
+	                /var/lib/tor/hanacoin-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -68,57 +68,57 @@ your monacoind's P2P listen port (9401 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./monacoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
+	./hanacoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
 
 (obviously, replace the Onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-	./monacoind ... -bind=127.0.0.1
+	./hanacoind ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-	./monacoind ... -discover
+	./hanacoind ... -discover
 
 and open port 9401 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./monacoin -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
+	./hanacoin -onion=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
 
 3. Automatically listen on Tor
 --------------------------------
 
 Starting with Tor version 0.2.7.1 it is possible, through Tor's control socket
 API, to create and destroy 'ephemeral' hidden services programmatically.
-Monacoin Core has been updated to make use of this.
+Hanacoin Core has been updated to make use of this.
 
 This means that if Tor is running (and proper authentication has been configured),
-Monacoin Core automatically creates a hidden service to listen on. This will positively 
+Hanacoin Core automatically creates a hidden service to listen on. This will positively
 affect the number of available .onion nodes.
 
-This new feature is enabled by default if Monacoin Core is listening (`-listen`), and
+This new feature is enabled by default if Hanacoin Core is listening (`-listen`), and
 requires a Tor connection to work. It can be explicitly disabled with `-listenonion=0`
 and, if not disabled, configured using the `-torcontrol` and `-torpassword` settings.
 To show verbose debugging information, pass `-debug=tor`.
 
-Connecting to Tor's control socket API requires one of two authentication methods to be 
-configured. For cookie authentication the user running monacoind must have write access 
-to the `CookieAuthFile` specified in Tor configuration. In some cases this is 
-preconfigured and the creation of a hidden service is automatic. If permission problems 
-are seen with `-debug=tor` they can be resolved by adding both the user running tor and 
-the user running monacoind to the same group and setting permissions appropriately. On 
-Debian-based systems the user running monacoind can be added to the debian-tor group, 
-which has the appropriate permissions. An alternative authentication method is the use 
-of the `-torpassword` flag and a `hash-password` which can be enabled and specified in 
+Connecting to Tor's control socket API requires one of two authentication methods to be
+configured. For cookie authentication the user running hanacoind must have write access
+to the `CookieAuthFile` specified in Tor configuration. In some cases this is
+preconfigured and the creation of a hidden service is automatic. If permission problems
+are seen with `-debug=tor` they can be resolved by adding both the user running tor and
+the user running hanacoind to the same group and setting permissions appropriately. On
+Debian-based systems the user running hanacoind can be added to the debian-tor group,
+which has the appropriate permissions. An alternative authentication method is the use
+of the `-torpassword` flag and a `hash-password` which can be enabled and specified in
 Tor configuration.
 
 4. Privacy recommendations
 ---------------------------
 
-- Do not add anything but monacoin ports to the hidden service created in section 2.
+- Do not add anything but hanacoin ports to the hidden service created in section 2.
   If you run a web service too, create a new hidden service for that.
   Otherwise it is trivial to link them, which may reduce privacy. Hidden
   services created automatically (as in section 3) always have only one port

@@ -1,18 +1,18 @@
-Monacoin Core version 0.14.2 is now available from:
+Hanacoin Core version 0.14.2 is now available from:
 
-  <https://monacoin.org/>
+  <https://hanacoin.org/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/monacoinproject/monacoin/issues>
+  <https://github.com/hanacoinproject/hanacoin/issues>
 
 Compatibility
 ==============
 
-Monacoin Core is extensively tested on multiple operating systems using
+Hanacoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -20,7 +20,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Monacoin Core should also work on most other Unix-like systems but is not
+Hanacoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes
@@ -29,7 +29,7 @@ Notable changes
 New Multisig Address Prefix
 ---------------------------
 
-Monacoin Core now supports P2SH addresses beginning with P on mainnet and p on testnet.
+Hanacoin Core now supports P2SH addresses beginning with P on mainnet and p on testnet.
 P2SH addresses beginning with 3 on mainnet and m or n on testnet will continue to be valid.
 Old and new addresses can be used interchangeably.
 
@@ -38,7 +38,7 @@ miniupnp CVE-2017-8798
 
 Bundled miniupnpc was updated to 2.0.20170509. This fixes an integer signedness error (present in MiniUPnPc v1.4.20101221 through v2.0) that allows remote attackers (within the LAN) to cause a denial of service or possibly have unspecified other impact.
 
-This only affects users that have explicitly enabled UPnP through the GUI setting or through the -upnp option, as since the last UPnP vulnerability (in Monacoin Core 0.10.4) it has been disabled by default.
+This only affects users that have explicitly enabled UPnP through the GUI setting or through the -upnp option, as since the last UPnP vulnerability (in Hanacoin Core 0.10.4) it has been disabled by default.
 
 If you use this option, it is recommended to upgrade to this version as soon as possible.
 
@@ -48,7 +48,7 @@ Reset Testnet
 Testnet3 has been deprecated and replaced with Testnet4. The server port has been changed to 19403 however the RPC port remains
 the same (19402).
 
-Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/monacoinproject/monacoin/blob/master-0.14/src/chainparams.cpp#L220).
+Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/hanacoinproject/hanacoin/blob/master-0.14/src/chainparams.cpp#L220).
 
 Performance Improvements
 --------------
@@ -75,7 +75,7 @@ improved, leading to much shorter sync and initial block download times.
 Manual Pruning
 --------------
 
-Monacoin Core has supported automatically pruning the blockchain since 0.13.2. Pruning
+Hanacoin Core has supported automatically pruning the blockchain since 0.13.2. Pruning
 the blockchain allows for significant storage space savings as the vast majority of
 the downloaded data can be discarded after processing so very little of it remains
 on the disk.
@@ -116,7 +116,7 @@ ZMQ On Windows
 
 Previously the ZeroMQ notification system was unavailable on Windows
 due to various issues with ZMQ. These have been fixed upstream and
-now ZMQ can be used on Windows. Please see [this document](https://github.com/monacoinproject/monacoin/blob/master-0.14/doc/zmq.md) for
+now ZMQ can be used on Windows. Please see [this document](https://github.com/hanacoinproject/hanacoin/blob/master-0.14/doc/zmq.md) for
 help with using ZMQ in general.
 
 Nested RPC Commands in Debug Console
@@ -128,7 +128,7 @@ command without running the commands separately.
 
 The nested RPC commands use bracket syntax (i.e. `getwalletinfo()`) and can
 be nested (i.e. `getblock(getblockhash(1))`). Simple queries can be
-done with square brackets where object values are accessed with either an 
+done with square brackets where object values are accessed with either an
 array index or a non-quoted string (i.e. `listunspent()[0][txid]`). Both
 commas and spaces can be used to separate parameters in both the bracket syntax
 and normal RPC command syntax.
@@ -137,9 +137,9 @@ Network Activity Toggle
 -----------------------
 
 A RPC command and GUI toggle have been added to enable or disable all p2p
-network activity. The network status icon in the bottom right hand corner 
+network activity. The network status icon in the bottom right hand corner
 is now the GUI toggle. Clicking the icon will either enable or disable all
-p2p network activity. If network activity is disabled, the icon will 
+p2p network activity. If network activity is disabled, the icon will
 be grayed out with an X on top of it.
 
 Additionally the `setnetworkactive` RPC command has been added which does
@@ -149,7 +149,7 @@ the same thing as the GUI icon. The command takes one boolean parameter,
 Out-of-sync Modal Info Layer
 ----------------------------
 
-When Monacoin Core is out-of-sync on startup, a semi-transparent information
+When Hanacoin Core is out-of-sync on startup, a semi-transparent information
 layer will be shown over top of the normal display. This layer contains
 details about the current sync progress and estimates the amount of time
 remaining to finish syncing. This layer can also be hidden and subsequently
@@ -158,19 +158,19 @@ unhidden by clicking on the progress bar at the bottom of the window.
 Support for JSON-RPC Named Arguments
 ------------------------------------
 
-Commands sent over the JSON-RPC interface and through the `monacoin-cli` binary
+Commands sent over the JSON-RPC interface and through the `hanacoin-cli` binary
 can now use named arguments. This follows the [JSON-RPC specification](http://www.jsonrpc.org/specification)
 for passing parameters by-name with an object.
 
-`monacoin-cli` has been updated to support this by parsing `name=value` arguments
+`hanacoin-cli` has been updated to support this by parsing `name=value` arguments
 when the `-named` option is given.
 
 Some examples:
 
-    src/monacoin-cli -named help command="help"
-    src/monacoin-cli -named getblockhash height=0
-    src/monacoin-cli -named getblock blockhash=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
-    src/monacoin-cli -named sendtoaddress address="(snip)" amount="1.0" subtractfeefromamount=true
+    src/hanacoin-cli -named help command="help"
+    src/hanacoin-cli -named getblockhash height=0
+    src/hanacoin-cli -named getblock blockhash=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+    src/hanacoin-cli -named sendtoaddress address="(snip)" amount="1.0" subtractfeefromamount=true
 
 The order of arguments doesn't matter in this case. Named arguments are also
 useful to leave out arguments that should stay at their default value. The
@@ -201,15 +201,15 @@ commands such as `prioritisetransaction` so that those changes will not be lost.
 GUI Changes
 -----------
 
- - After resetting the options by clicking the `Reset Options` button 
-   in the options dialog or with the `-resetguioptions` startup option, 
-   the user will be prompted to choose the data directory again. This 
-   is to ensure that custom data directories will be kept after the 
-   option reset which clears the custom data directory set via the choose 
+ - After resetting the options by clicking the `Reset Options` button
+   in the options dialog or with the `-resetguioptions` startup option,
+   the user will be prompted to choose the data directory again. This
+   is to ensure that custom data directories will be kept after the
+   option reset which clears the custom data directory set via the choose
    datadir dialog.
 
- - Multiple peers can now be selected in the list of peers in the debug 
-   window. This allows for users to ban or disconnect multiple peers 
+ - Multiple peers can now be selected in the list of peers in the debug
+   window. This allows for users to ban or disconnect multiple peers
    simultaneously instead of banning them one at a time.
 
  - An indicator has been added to the bottom right hand corner of the main
@@ -224,7 +224,7 @@ Low-level RPC changes
    an optional third arg, which was always ignored. Make sure to never pass more
    than two arguments.
 
- - The first boolean argument to `getaddednodeinfo` has been removed. This is 
+ - The first boolean argument to `getaddednodeinfo` has been removed. This is
    an incompatible change.
 
  - RPC command `getmininginfo` loses the "testnet" field in favor of the more
@@ -234,8 +234,8 @@ Low-level RPC changes
    precious. A precious block will be treated as if it were received earlier
    than a competing block.
 
- - A new RPC command `importmulti` has been added which receives an array of 
-   JSON objects representing the intention of importing a public key, a 
+ - A new RPC command `importmulti` has been added which receives an array of
+   JSON objects representing the intention of importing a public key, a
    private key, an address and script/p2sh
 
  - Use of `getrawtransaction` for retrieving confirmed transactions with unspent
@@ -244,7 +244,7 @@ Low-level RPC changes
    the mempool or if `txindex` is enabled.
 
  - A new RPC command `getmemoryinfo` has been added which will return information
-   about the memory usage of Monacoin Core. This was added in conjunction with
+   about the memory usage of Hanacoin Core. This was added in conjunction with
    optimizations to memory management. See [Pull #8753](https://github.com/bitcoin/bitcoin/pull/8753)
    for more information.
 
@@ -264,7 +264,7 @@ HTTP REST Changes
 -----------------
 
  - UTXO set query (`GET /rest/getutxos/<checkmempool>/<txid>-<n>/<txid>-<n>
-   /.../<txid>-<n>.<bin|hex|json>`) responses were changed to return status 
+   /.../<txid>-<n>.<bin|hex|json>`) responses were changed to return status
    code `HTTP_BAD_REQUEST` (400) instead of `HTTP_INTERNAL_SERVER_ERROR` (500)
    when requests contain invalid parameters.
 
@@ -396,7 +396,7 @@ the same cache performance as prior releases.  Users on low-memory systems
 this parameter.
 
 Additional information relating to running on low-memory systems can be found
-here, originally written for Bitcoin but can also be used for Monacoin:
+here, originally written for Bitcoin but can also be used for Hanacoin:
 [reducing-bitcoind-memory-usage.md](https://gist.github.com/laanwj/efe29c7661ce9b6620a7).
 
 Credits

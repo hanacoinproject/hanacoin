@@ -66,8 +66,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin Core</translation>
+        <source>Hanacoin</source>
+        <translation>Hanacoin Core</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -236,8 +236,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Monacoin Core</source>
-        <translation>Monacoin Core</translation>
+        <source>Hanacoin Core</source>
+        <translation>Hanacoin Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>

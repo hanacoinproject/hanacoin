@@ -54,10 +54,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || IsArgSet("-?") || IsArgSet("-h") || IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s monacoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s hanacoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  monacoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded monacoin transaction") + "\n" +
-              "  monacoin-tx [options] -create [commands]   " + _("Create hex-encoded monacoin transaction") + "\n" +
+              "  hanacoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded hanacoin transaction") + "\n" +
+              "  hanacoin-tx [options] -create [commands]   " + _("Create hex-encoded hanacoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
