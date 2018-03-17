@@ -1,13 +1,14 @@
+.vscode
 *.tar.gz
 
 *.exe
-src/litecoin
-src/litecoind
-src/litecoin-cli
-src/litecoin-tx
-src/test/test_litecoin
-src/test/test_litecoin_fuzzy
-src/qt/test/test_litecoin-qt
+src/hanacoin
+src/hanacoind
+src/hanacoin-cli
+src/hanacoin-tx
+src/test/test_hanacoin
+src/test/test_hanacoin_fuzzy
+src/qt/test/test_hanacoin-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +75,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-litecoin-qt
-Litecoin-Qt.app
+hanacoin-qt
+Hanacoin-Qt.app
 
 # Unit-tests
 Makefile.test
-litecoin-qt_test
+hanacoin-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -93,7 +94,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_litecoin.coverage/
+test_hanacoin.coverage/
 total.coverage/
 coverage_percent.txt
 
