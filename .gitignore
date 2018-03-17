@@ -81,6 +81,10 @@ Hanacoin-Qt.app
 # Unit-tests
 Makefile.test
 hanacoin-qt_test
+<<<<<<< HEAD
+=======
+src/test/buildenv.py
+>>>>>>> ed21303f8... Update icons
 
 # Resources cpp
 qrc_*.cpp
