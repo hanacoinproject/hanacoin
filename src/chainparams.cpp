@@ -117,7 +117,7 @@ public:
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
-        nDefaultPort = 9401;
+        nDefaultPort = 9501;
         nPruneAfterHeight = 100000;
         vAlertPubKey = ParseHex("04fc55d919cdea21e8171fea24c3cf23864ff64a53404829ad50af86e1be1b8217115701b348d50c6aaba6983bc148d3c9e6fa8c11365889774fc1db6da6840c06");
 
@@ -223,7 +223,7 @@ public:
         nSwitchDIGIblock = 20;
         nSwitchLyra2REv2_DGW = 30;
 
-        nDefaultPort = 19403;
+        nDefaultPort = 19503;
         nPruneAfterHeight = 1000;
         vAlertPubKey = ParseHex("04887665070e79d20f722857e58ec8f402733f710135521a0b63441419bf5665ba4623bed13fca0cb2338682ab2a54ad13ce07fbc81c3c2f0912a4eb8521dd3cfb");
 

@@ -204,8 +204,8 @@ UniValue addnode(const JSONRPCRequest& request)
             "1. \"node\"     (string, required) The node (see getpeerinfo for nodes)\n"
             "2. \"command\"  (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n"
             "\nExamples:\n"
-            + HelpExampleCli("addnode", "\"192.168.0.6:9401\" \"onetry\"")
-            + HelpExampleRpc("addnode", "\"192.168.0.6:9401\", \"onetry\"")
+            + HelpExampleCli("addnode", "\"192.168.0.6:9501\" \"onetry\"")
+            + HelpExampleRpc("addnode", "\"192.168.0.6:9501\", \"onetry\"")
         );
 
     if(!g_connman)
@@ -243,8 +243,8 @@ UniValue disconnectnode(const JSONRPCRequest& request)
             "\nArguments:\n"
             "1. \"address\"     (string, required) The IP address/port of the node\n"
             "\nExamples:\n"
-            + HelpExampleCli("disconnectnode", "\"192.168.0.6:9401\"")
-            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:9401\"")
+            + HelpExampleCli("disconnectnode", "\"192.168.0.6:9501\"")
+            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:9501\"")
         );
 
     if(!g_connman)
@@ -273,7 +273,7 @@ UniValue getaddednodeinfo(const JSONRPCRequest& request)
             "    \"connected\" : true|false,          (boolean) If connected\n"
             "    \"addresses\" : [                    (list of objects) Only when connected = true\n"
             "       {\n"
-            "         \"address\" : \"192.168.0.201:9401\",  (string) The hanacoin server IP and port we're connected to\n"
+            "         \"address\" : \"192.168.0.201:9501\",  (string) The hanacoin server IP and port we're connected to\n"
             "         \"connected\" : \"outbound\"           (string) connection, inbound or outbound\n"
             "       }\n"
             "     ]\n"
