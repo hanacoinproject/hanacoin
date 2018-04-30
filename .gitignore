@@ -1,3 +1,5 @@
+.tags*
+.vscode
 *.tar.gz
 
 *.exe
@@ -81,9 +83,8 @@ src/qt/bitcoin-qt.includes
 *.qm
 Makefile
 hanacoin-qt
-hanacoin-Qt.app
+Hanacoin-Qt.app
 background.tiff*
-
 # Unit-tests
 Makefile.test
 hanacoin-qt_test

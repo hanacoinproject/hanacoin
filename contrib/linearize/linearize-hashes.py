@@ -121,16 +121,16 @@ if __name__ == '__main__':
         settings[m.group(1)] = m.group(2)
     f.close()
 
-    if 'host' not in settings:
-        settings['host'] = '127.0.0.1'
-    if 'port' not in settings:
-        settings['port'] = 9402
-    if 'min_height' not in settings:
-        settings['min_height'] = 0
-    if 'max_height' not in settings:
-        settings['max_height'] = 313000
-    if 'rev_hash_bytes' not in settings:
-        settings['rev_hash_bytes'] = 'false'
+	if 'host' not in settings:
+		settings['host'] = '127.0.0.1'
+	if 'port' not in settings:
+		settings['port'] = 9502
+	if 'min_height' not in settings:
+		settings['min_height'] = 0
+	if 'max_height' not in settings:
+		settings['max_height'] = 313000
+	if 'rev_hash_bytes' not in settings:
+		settings['rev_hash_bytes'] = 'false'
 
     use_userpass = True
     use_datadir = False
