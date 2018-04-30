@@ -120,24 +120,24 @@ class ProxyTest(BitcoinTestFramework):
 
         if test_onion:
             # Test: outgoing onion connection through node
-            node.addnode("bitcoinostk4e4re.onion:9401", "onetry")
+            node.addnode("bitcoinostk4e4re.onion:9501", "onetry")
             cmd = proxies[2].queue.get()
             assert(isinstance(cmd, Socks5Command))
             assert_equal(cmd.atyp, AddressType.DOMAINNAME)
             assert_equal(cmd.addr, b"bitcoinostk4e4re.onion")
-            assert_equal(cmd.port, 9401)
+            assert_equal(cmd.port, 9501)
             if not auth:
                 assert_equal(cmd.username, None)
                 assert_equal(cmd.password, None)
             rv.append(cmd)
 
         # Test: outgoing DNS name connection through node
-        node.addnode("node.noumenon:9401", "onetry")
+        node.addnode("node.noumenon:9501", "onetry")
         cmd = proxies[3].queue.get()
         assert(isinstance(cmd, Socks5Command))
         assert_equal(cmd.atyp, AddressType.DOMAINNAME)
         assert_equal(cmd.addr, b"node.noumenon")
-        assert_equal(cmd.port, 9401)
+        assert_equal(cmd.port, 9501)
         if not auth:
             assert_equal(cmd.username, None)
             assert_equal(cmd.password, None)
@@ -182,7 +182,7 @@ class ProxyTest(BitcoinTestFramework):
         assert_equal(n1['onion']['proxy'], '%s:%i' % (self.conf2.addr))
         assert_equal(n1['onion']['proxy_randomize_credentials'], False)
         assert_equal(n1['onion']['reachable'], True)
-        
+
         n2 = networks_dict(self.nodes[2].getnetworkinfo())
         for net in ['ipv4','ipv6','onion']:
             assert_equal(n2[net]['proxy'], '%s:%i' % (self.conf2.addr))
