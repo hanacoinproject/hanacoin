@@ -155,8 +155,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     assert(pindexLast != nullptr);
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 
-    // Genesis block
-    if (pindexLast == NULL)
+    // Genesis block and premine blocks
+    if (pindexLast == NULL || pindexLast->nHeight < params.premineBlocks)
         return nProofOfWorkLimit;
 
     if (params.fPowNoRetargeting)
