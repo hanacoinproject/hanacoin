@@ -75,8 +75,8 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 1225000;
-        consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("c699ca19d51c98fd39a188570afc6e73237682a57407ea6c7f2d22bdb6ae35e6");
+        consensus.BIP34Height = 1;
+        consensus.BIP34Hash = uint256S("b5e2664e1ae77de8c8548cf2f17b67379a57044266456045a0ad558e2fde8d9d");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -186,7 +186,7 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 1225000;
-        consensus.BIP34Height = 0;
+        consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("4df73b297d37d41e66f50780a1ce671c6cafb319fb6676aa5b2af0ea09fd1d0b");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
