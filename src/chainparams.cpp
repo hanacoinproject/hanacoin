@@ -102,10 +102,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1520467200; // March 8, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000003b5fe46b5222");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xc699ca19d51c98fd39a188570afc6e73237682a57407ea6c7f2d22bdb6ae35e6"); // 131452
+        consensus.defaultAssumeValid = uint256S("0xd1c1bdae051d11b7c3bb1e26bbc473eeecc6dcc2464005f2c9838cda47ebfb9d"); // 302536 
 
         // Hard premine (no difficulty retargeting) 445,000 blocks * 50 = 22,250,000 HanaCoins
         // Soft premine (normal difficulty retargeting) 5,000 blocks * 50 = 250,000 HanaCoins
@@ -169,11 +169,11 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Data as of block b44bc5ae41d1be67227ba9ad875d7268aa86c965b1d64b47c35be6e8d5c352f4 (height 1155626).
-            1525878567, // * UNIX timestamp of last known number of transactions
-            0,          // * total number of transactions between genesis and that timestamp
+            // Data as of block b8f1e3efdbaec9b2adf722a9ad3667c7368e222e044123bfc00dc2054e373bea (height 447457).
+            1526267426, // * UNIX timestamp of last known number of transactions
+            447458,          // * total number of transactions between genesis and that timestamp
             //   (the tx=... number in the SetBestChain debug.log lines)
-            500 // * estimated number of transactions per second after that timestamp
+            0.025 // * estimated number of transactions per second after that timestamp
         };
     }
 };
