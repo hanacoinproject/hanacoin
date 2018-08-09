@@ -1,6 +1,6 @@
 Hanacoin Core version 0.10.4.0 is now available from:
 
-  <https://download.hanacoin.org/hanacoin-0.10.4.0/>
+  <https://download.hanacoin.com/hanacoin-0.10.4.0/>
 
 This is a new minor version release, bringing bug fixes, the BIP65
 (CLTV) consensus change, and relay policy preparation for BIP113. It is
@@ -104,7 +104,7 @@ next major release.
 =================
 
 This release is based upon Bitcoin Core v0.10.4.  Their upstream changelog applies to us and
-is included in as separate release-notes, see: [Release Notes](release-notes.md).  
+is included in as separate release-notes, see: [Release Notes](release-notes.md).
 This section describes the Hanacoin-specific differences.
 
 - Added BIP65 CHECKLOCKTIMEVERIFY softfork.

@@ -1,6 +1,6 @@
 Hanacoin Core version *0.15.1* is now available from:
 
-  <https://hanacoin.org/>
+  <https://hanacoin.com/>
 
 This is a new minor version release, including various bugfixes and
 performance improvements, as well as updated translations.
@@ -17,7 +17,7 @@ How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely
-shut down (which might take a few minutes for older versions), then run the 
+shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/Hanacoin-Qt` (on Mac)
 or `hanacoind`/`hanacoin-qt` (on Linux).
 
@@ -66,7 +66,7 @@ have been made, as a safety precaution against blockchain forks and misbehaving 
 
 - Unrequested blocks with less work than the minimum-chain-work are now no longer processed even
 if they have more work than the tip (a potential issue during IBD where the tip may have low-work).
-This prevents peers wasting the resources of a node. 
+This prevents peers wasting the resources of a node.
 
 - Peers which provide a chain with less work than the minimum-chain-work during IBD will now be disconnected.
 
@@ -255,7 +255,7 @@ Thanks to everyone who directly contributed to this release:
 - aunyks
 - coblee
 - gabrieldov
-- Martin Smith 
+- Martin Smith
 - ppm0
 - romanornr
 - shaolinfry

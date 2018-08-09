@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to hanacoin-core.
 
 General hanacoin questions and/or support requests and are best directed to the [hanacointalk.io forums](https://hanacointalk.io/).
 
-For reporting security issues, please contact the Hanacoin developers on the #hanacoin-dev Freenode IRC channel or alternatively you can email us at contact@hanacoin.org.
+For reporting security issues, please contact the Hanacoin developers on the #hanacoin-dev Freenode IRC channel or alternatively you can email us at contact@hanacoin.com.
 
 ### Describe the issue
 

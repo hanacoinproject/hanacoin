@@ -105,7 +105,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000003b5fe46b5222");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xd1c1bdae051d11b7c3bb1e26bbc473eeecc6dcc2464005f2c9838cda47ebfb9d"); // 302536 
+        consensus.defaultAssumeValid = uint256S("0xd1c1bdae051d11b7c3bb1e26bbc473eeecc6dcc2464005f2c9838cda47ebfb9d"); // 302536
 
         // Hard premine (no difficulty retargeting) 445,000 blocks * 50 = 22,250,000 HanaCoins
         // Soft premine (normal difficulty retargeting) 5,000 blocks * 50 = 250,000 HanaCoins
@@ -136,7 +136,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x6cecc2669293484fcb9ac76d1e937b7aee80e49046b67e43bc1d8e403b0498da"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        // vSeeds.emplace_back("dnsseed.hanacoin.org", false);
+        // vSeeds.emplace_back("dnsseed.hanacoin.com", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 40);  // H
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -243,7 +243,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        // vSeeds.emplace_back("testnet-dnsseed.hanacoin.org", false);
+        // vSeeds.emplace_back("testnet-dnsseed.hanacoin.com", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);

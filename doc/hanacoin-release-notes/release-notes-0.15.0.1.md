@@ -1,6 +1,6 @@
 Hanacoin Core version *0.15.0* is now available from:
 
-  <https://download.hanacoin.org/hanacoin-0.15.0/>
+  <https://download.hanacoin.com/hanacoin-0.15.0/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
@@ -17,7 +17,7 @@ How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely
-shut down (which might take a few minutes for older versions), then run the 
+shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/Hanacoin-Qt` (on Mac)
 or `hanacoind`/`hanacoin-qt` (on Linux).
 

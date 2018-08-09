@@ -5,7 +5,7 @@ Setup
 ---------------------
 Hanacoin Core is the original Hanacoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Hanacoin transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Hanacoin Core, visit [hanacoin.org](https://hanacoin.org).
+To download Hanacoin Core, visit [hanacoin.com](https://hanacoin.com).
 
 Running
 ---------------------

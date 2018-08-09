@@ -1,6 +1,6 @@
 Hanacoin Core version 0.13.2 is now available from:
 
-  <https://download.hanacoin.org/hanacoin-0.13.2.1/>
+  <https://download.hanacoin.com/hanacoin-0.13.2.1/>
 
 This is a new major version release, including new features, various bugfixes and performance improvements, as well as updated translations.
 It is recommended to upgrade to this version.

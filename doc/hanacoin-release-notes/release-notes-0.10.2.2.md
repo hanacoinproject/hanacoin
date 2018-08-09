@@ -1,8 +1,8 @@
 Hanacoin Core version 0.10.2.2 is now available from:
 
-  <https://download.hanacoin.org/hanacoin-0.10.2.2/>
+  <https://download.hanacoin.com/hanacoin-0.10.2.2/>
 
-This is a new major version release, bringing bug fixes and translation 
+This is a new major version release, bringing bug fixes and translation
 updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
