@@ -540,7 +540,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/hanacoinproject/hanacoin>";
-    const std::string URL_WEBSITE = "<https://hanacoin.org>";
+    const std::string URL_WEBSITE = "<https://hanacoin.com>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2013, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
