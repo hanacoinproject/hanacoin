@@ -312,17 +312,8 @@ You need to use GNU make (`gmake`) instead of `make`.
 
 For the wallet (optional):
 
-<<<<<<< HEAD
     ./contrib/install_db4.sh `pwd`
     setenv BDB_PREFIX $PWD/db4
-=======
-    pkg install db5
-
-This will give a warning "configure: WARNING: Found Berkeley DB other
-than 4.8; wallets opened by this build will not be portable!", but as FreeBSD never
-had a binary release, this may not matter. If backwards compatibility
-with 4.8-built Hanacoin Core is needed follow the steps under "Berkeley DB" above.
->>>>>>> 1c94c1de7... Branding
 
 Then build using:
 
