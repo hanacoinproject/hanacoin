@@ -85,9 +85,7 @@ public:
     const ChainTxData& TxData() const { return chainTxData; }
     void UpdateVersionBitsParameters(Consensus::DeploymentPos d, int64_t nStartTime, int64_t nTimeout);
 
-    int SwitchKGWblock() const { return nSwitchKGWblock; }
-    int SwitchDIGIblock() const { return nSwitchDIGIblock; }
-    int SwitchLyra2REv2_DGWblock() const { return nSwitchLyra2REv2_DGW; }
+    int SwitchLyra2REv3_DGWblock() const { return nSwitchLyra2REv3_DGW; }
 
 protected:
     CChainParams() {}
@@ -109,9 +107,7 @@ protected:
     CCheckpointData checkpointData;
     ChainTxData chainTxData;
 
-    int nSwitchKGWblock;
-    int nSwitchDIGIblock;
-    int nSwitchLyra2REv2_DGW;
+    int nSwitchLyra2REv3_DGW;
 };
 
 /**

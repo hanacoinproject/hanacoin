@@ -66,6 +66,8 @@ public:
 
     uint256 GetPoWHash(bool bLyra2REv2 = false) const;
 
+    uint256 GetPoWHash(int nHeight) const;
+
     int64_t GetBlockTime() const
     {
         return (int64_t)nTime;
