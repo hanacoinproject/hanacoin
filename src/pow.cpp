@@ -3,7 +3,8 @@
 // Copyright (c) 2011-2019 Litecoin Developers
 // Copyright (c) 2013-2014 Dr Kimoto Chan
 // Copyright (c) 2009-2014 The DigiByte developers
-// Copyright (c) 2013-2019 Hanacoin Developers
+// Copyright (c) 2013-2019 Monacoin Developers
+// Copyright (c) 2017-2019 Hanacoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -90,11 +91,11 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const CBlockH
     CBigNum PastDifficultyAverage;
     CBigNum PastDifficultyAveragePrev;
 
-    if (BlockLastSolved == NULL || BlockLastSolved->nHeight < Params().SwitchLyra2REv2_DGWblock() + PastBlocksMin) {
+    if (BlockLastSolved == NULL || BlockLastSolved->nHeight < PastBlocksMin) {
         return UintToArith256(params.powLimit).GetCompact();
     }
 
-    for (unsigned int i = 1; BlockReading && BlockReading->nHeight >= Params().SwitchLyra2REv2_DGWblock(); i++) {
+    for (unsigned int i = 1; BlockReading; i++) {
         if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
         CountBlocks++;
 
@@ -141,7 +142,7 @@ unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const 
     int64_t                 PastSecondsMin              = TimeDaySeconds * 0.25;
     int64_t                 PastSecondsMax              = TimeDaySeconds * 7;
     uint64_t                PastBlocksMin               = PastSecondsMin / BlocksTargetSpacing;
-    uint64_t                PastBlocksMax               = PastSecondsMax / BlocksTargetSpacing; 
+    uint64_t                PastBlocksMax               = PastSecondsMax / BlocksTargetSpacing;
 
     if (params.fPowNoRetargeting)
     {
@@ -163,60 +164,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (params.fPowNoRetargeting)
         return pindexLast->nBits;
 
-    if(pindexLast->nHeight+1 >= Params().SwitchLyra2REv2_DGWblock())
-    {
-        // DGWv3
-        return DarkGravityWave(pindexLast, pblock, params);
-    }
-    else if(pindexLast->nHeight+1 >= Params().SwitchKGWblock() && pindexLast->nHeight+1 < Params().SwitchDIGIblock()){
-        // KGW
-        return GetNextWorkRequired_V2(pindexLast, pblock, params);
-    }
-
-    int64_t adjustmentInterval = params.DifficultyAdjustmentInterval();
-    if ((pindexLast->nHeight+1) >= Params().SwitchDIGIblock()) {
-        adjustmentInterval = params.DifficultyAdjustmentIntervalDigishield();
-    }
-
-    // Only change once per difficulty adjustment interval
-    if ((pindexLast->nHeight+1) % adjustmentInterval != 0)
-    {
-        if (params.fPowAllowMinDifficultyBlocks)
-        {
-            // Special difficulty rule for testnet:
-            // If the new block's timestamp is more than 2* 10 minutes
-            // then allow mining of a min-difficulty block.
-            if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*2)
-            {
-                return nProofOfWorkLimit;
-            }
-            else
-            {
-                // Return the last non-special-min-difficulty-rules-block
-                const CBlockIndex* pindex = pindexLast;
-                while (pindex->pprev && pindex->nHeight % adjustmentInterval != 0 && pindex->nBits == nProofOfWorkLimit)
-                    pindex = pindex->pprev;
-                return pindex->nBits;
-            }
-        }
-        return pindexLast->nBits;
-    }
-
-    // Go back by what we want to be 14 days worth of blocks
-    // Hanacoin: This fixes an issue where a 51% attack can change difficulty at will.
-    // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
-    int blockstogoback = adjustmentInterval-1;
-    if ((pindexLast->nHeight+1) != adjustmentInterval)
-        blockstogoback = adjustmentInterval;
-
-    // Go back by what we want to be 14 days worth of blocks
-    const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < blockstogoback; i++)
-        pindexFirst = pindexFirst->pprev;
-
-    assert(pindexFirst);
-
-    return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
+    // DGWv3
+    return DarkGravityWave(pindexLast, pblock, params);
 }
 
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
@@ -226,7 +175,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
         return pindexLast->nBits;
     }
 
-    bool fNewDifficultyProtocol = ((pindexLast->nHeight+1) >= Params().SwitchDIGIblock());
+    bool fNewDifficultyProtocol = true;
     int64_t targetTimespan =  params.nPowTargetTimespan;
     if (fNewDifficultyProtocol) {
         targetTimespan = params.nPowTargetTimespanDigishield;

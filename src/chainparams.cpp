@@ -83,7 +83,7 @@ public:
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 1.1 * 24 * 60 * 60; // 1.1 days
         consensus.nPowTargetSpacing = 1.5 * 60; // 1.5 minutes
-        consensus.nPowTargetTimespanDigisheld = 1.5 * 60;
+        consensus.nPowTargetTimespanDigishield = 1.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 7560; // 75% of 10080
@@ -103,19 +103,17 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1548892800; // Jan 31, 2019
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000003b5fe46b5222");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000a52e411443000be");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xd1c1bdae051d11b7c3bb1e26bbc473eeecc6dcc2464005f2c9838cda47ebfb9d"); // 302536
+        consensus.defaultAssumeValid = uint256S("0x3340b64616334320d902507a57b9711555ab91596aaa8275f51e48703af9bae9"); // 700000
 
         // Hard premine (no difficulty retargeting) 445,000 blocks * 50 = 22,250,000 HanaCoins
         // Soft premine (normal difficulty retargeting) 5,000 blocks * 50 = 250,000 HanaCoins
         consensus.premineBlocks = 445000;
 
-        // Hardfork params
-        nSwitchKGWblock = 0;
-        nSwitchDIGIblock = 0;
-        nSwitchLyra2REv2_DGW = 0;
+        // Switching on Lyra2REv3
+        nSwitchLyra2REv3_DGW = 777000;
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -173,6 +171,7 @@ public:
                 { 351400,    uint256S("0x9ee755c14fc1b6aa33640d882c94318cbd0f7629ff87ed76efb1d95218699c4c") },
                 { 401600,    uint256S("0x9a4bbebf9166bc3297b0ca02efdafb52278b66267904a3582ea41219c2edb2d0") },
                 { 446000,    uint256S("0x69a26d3d13a852542091f514dbd4808ca57f5f2e785a5d19347854d760b57d41") },
+                { 700000,    uint256S("0x3340b64616334320d902507a57b9711555ab91596aaa8275f51e48703af9bae9") },
             }
         };
 
@@ -205,7 +204,7 @@ public:
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 1.1 * 24 * 60 * 60; // 1.1 days
         consensus.nPowTargetSpacing = 1.5 * 60; // 1.5 minutes
-        consensus.nPowTargetTimespanDigisheld = 1.5 * 60;
+        consensus.nPowTargetTimespanDigishield = 1.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 75; // 75% for testchains
@@ -237,10 +236,8 @@ public:
         pchMessageStart[2] = 0x4d;
         pchMessageStart[3] = 0x18;
 
-        // Hardfork params
-        nSwitchKGWblock = 0;
-        nSwitchDIGIblock = 0;
-        nSwitchLyra2REv2_DGW = 0;
+        // Switch on Lyra2REv3
+        nSwitchLyra2REv3_DGW = 300;
 
         nDefaultPort = 19503;
         nPruneAfterHeight = 1000;
@@ -303,7 +300,7 @@ public:
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 1.1 * 24 * 60 * 60; // 1.5 days
         consensus.nPowTargetSpacing = 1.5 * 60; // 1.5 minutes
-        consensus.nPowTargetTimespanDigisheld = 1.5 * 60;
+        consensus.nPowTargetTimespanDigishield = 1.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
@@ -326,11 +323,6 @@ public:
 
         // No premine in regtest
         consensus.premineBlocks = 0;
-
-        // Hardfork params
-        nSwitchKGWblock = 0;
-        nSwitchDIGIblock = 0;
-        nSwitchLyra2REv2_DGW = 0;
 
         pchMessageStart[0] = 0xf1;
         pchMessageStart[1] = 0xc2;
