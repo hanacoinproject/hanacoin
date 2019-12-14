@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
-// Copyright (c) 2013-2019 The Monacoin Core developers
+// Copyright (c) 2013-2019 The Hanacoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,7 +25,7 @@ class uint256;
 
 #define PAIRTYPE(t1, t2)    std::pair<t1, t2>
 
-#define INVALID_ALERT_KEY_MESS "Warning: Alert-key is invalid. Please visit https://monacoin.org/."
+#define INVALID_ALERT_KEY_MESS "Warning: Alert-key is invalid. Please visit https://hanacoin.com/."
 
 extern std::map<uint256, CAlert> mapAlerts;
 extern CCriticalSection cs_mapAlerts;

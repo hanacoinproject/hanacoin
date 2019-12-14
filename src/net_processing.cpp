@@ -33,7 +33,7 @@
 #include <memory>
 
 #if defined(NDEBUG)
-# error "Monacoin cannot be compiled without assertions."
+# error "Hanacoin cannot be compiled without assertions."
 #endif
 
 /** Expiration time for orphan transactions in seconds */

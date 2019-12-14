@@ -1,13 +1,13 @@
-Monacoin Core version 0.16.3 is now available from:
+Hanacoin Core version 0.16.3 is now available from:
 
-  <https://github.com/monacoinproject/monacoin/releases>
+  <https://github.com/hanacoinproject/hanacoin/releases>
 
 This is a new minor version release, with various bugfixes
 as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/monacoinproject/monacoin/issues>
+  <https://github.com/hanacoinproject/hanacoin/issues>
 
 
 How to Upgrade
@@ -16,7 +16,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/Bitcoin-Qt` (on Mac)
-or `monacoind`/`monacoin-qt` (on Linux).
+or `hanacoind`/`hanacoin-qt` (on Linux).
 
 The first time you run version 0.15.0 or newer, your chainstate database will be converted to a
 new format, which will take anywhere from a few minutes to half an hour,
@@ -63,7 +63,7 @@ to upgrade any of the vulnerable versions to 0.16.3 as soon as possible.
 - #13547 `212ef1f` Make `signrawtransaction*` give an error when amount is needed but missing (ajtowns)
 
 ### Miscellaneous
-- #13655 `1cdbea7` monacoinconsensus: invalid flags error should be set to `monacoinconsensus_err` (afk11)
+- #13655 `1cdbea7` hanacoinconsensus: invalid flags error should be set to `hanacoinconsensus_err` (afk11)
 
 ### Documentation
 - #13844 `11b9dbb` correct the help output for -prune (hebasto)

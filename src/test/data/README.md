@@ -1,7 +1,7 @@
 Description
 ------------
 
-This directory contains data-driven tests for various aspects of Monacoin.
+This directory contains data-driven tests for various aspects of Hanacoin.
 
 License
 --------

@@ -2,13 +2,13 @@
 # Copyright (c) 2015-2018 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test monacoind with different proxy configuration.
+"""Test hanacoind with different proxy configuration.
 
 Test plan:
-- Start monacoind's with different proxy configurations
+- Start hanacoind's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on monacoind side:
+- Proxy configurations to test on hanacoind side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create monacoinds that connect to them
-- Manipulate the monacoinds using addnode (onetry) an observe effects
+- Create hanacoinds that connect to them
+- Manipulate the hanacoinds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6

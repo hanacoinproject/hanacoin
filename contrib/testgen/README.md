@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Monacoin tests.
+Utilities to generate test vectors for the data-driven Hanacoin tests.
 
 Usage: 
 

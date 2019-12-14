@@ -1524,7 +1524,7 @@ static void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Monacoin " + FormatFullVersion();
+        std::string strDesc = "Hanacoin " + FormatFullVersion();
 
         do {
 #ifndef UPNPDISCOVER_SUCCESS

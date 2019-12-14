@@ -38,17 +38,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-Build Monacoin Core
+Build Hanacoin Core
 ------------------------
 
-1. Clone the Monacoin Core source code and cd into `monacoin`
+1. Clone the Hanacoin Core source code and cd into `hanacoin`
 
-        git clone https://github.com/monacoinproject/monacoin
-        cd monacoin
+        git clone https://github.com/hanacoinproject/hanacoin
+        cd hanacoin
 
-2.  Build Monacoin Core:
+2.  Build Hanacoin Core:
 
-    Configure and build the headless Monacoin Core binaries as well as the GUI (if Qt is found).
+    Configure and build the headless Hanacoin Core binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -70,33 +70,33 @@ Build Monacoin Core
 
     or
 
-        cd ~/monacoin/src
-        cp monacoind /usr/local/bin/
-        cp monacoin-cli /usr/local/bin/
+        cd ~/hanacoin/src
+        cp hanacoind /usr/local/bin/
+        cp hanacoin-cli /usr/local/bin/
 
 Running
 -------
 
-Monacoin Core is now available at `./src/monacoind`
+Hanacoin Core is now available at `./src/hanacoind`
 
 Before running, it's recommended that you create an RPC configuration file.
 
-    echo -e "rpcuser=monacoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Monacoin/monacoin.conf"
+    echo -e "rpcuser=hanacoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Hanacoin/hanacoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Monacoin/monacoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Hanacoin/hanacoin.conf"
 
-The first time you run monacoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run hanacoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Monacoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Hanacoin/debug.log
 
 Other commands:
 -------
 
-    ./src/monacoind -daemon # Starts the monacoin daemon.
-    ./src/monacoin-cli --help # Outputs a list of command-line options.
-    ./src/monacoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/hanacoind -daemon # Starts the hanacoin daemon.
+    ./src/hanacoin-cli --help # Outputs a list of command-line options.
+    ./src/hanacoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----

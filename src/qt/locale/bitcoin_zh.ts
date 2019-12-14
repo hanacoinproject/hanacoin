@@ -135,7 +135,7 @@
         <translation>仅支付全额的%1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Monacoin address</source>
+        <source>Warning: Invalid Hanacoin address</source>
         <translation>警告：萌奈币地址无效</translation>
     </message>
     </context>
