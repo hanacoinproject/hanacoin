@@ -103,10 +103,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1548892800; // Jan 31, 2019
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000a52e411443000be");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000b7f78561e8febc1");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x3340b64616334320d902507a57b9711555ab91596aaa8275f51e48703af9bae9"); // 700000
+        consensus.defaultAssumeValid = uint256S("0xc24e3741e5bd5aae2170e73316fabbc7b99bdc81541ecea4a2ed9c32e61804ba"); // 700000
 
         // Hard premine (no difficulty retargeting) 445,000 blocks * 50 = 22,250,000 HanaCoins
         // Soft premine (normal difficulty retargeting) 5,000 blocks * 50 = 250,000 HanaCoins
@@ -151,7 +151,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
         base58Prefixes[OLD_SECRET_KEY] = std::vector<unsigned char>(1,178);
 
-        bech32_hrp = "mona";
+        bech32_hrp = "hana";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -172,6 +172,8 @@ public:
                 { 401600,    uint256S("0x9a4bbebf9166bc3297b0ca02efdafb52278b66267904a3582ea41219c2edb2d0") },
                 { 446000,    uint256S("0x69a26d3d13a852542091f514dbd4808ca57f5f2e785a5d19347854d760b57d41") },
                 { 700000,    uint256S("0x3340b64616334320d902507a57b9711555ab91596aaa8275f51e48703af9bae9") },
+                { 825430,    uint256S("0x96cd24897ca011ae9319e0c9e4811d6fed39d913ab9b286bb8ed77f0b7dd2dc0") },
+                { 903248,    uint256S("0x4495f546e03f1301201e1985cd3d0c8525e8618a930f6c49bcf5b95732a5642e") },
             }
         };
 
@@ -263,7 +265,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
         base58Prefixes[OLD_SECRET_KEY] = std::vector<unsigned char>(1,239);
 
-        bech32_hrp = "tmona";
+        bech32_hrp = "thana";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
@@ -365,7 +367,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
         base58Prefixes[OLD_SECRET_KEY] = std::vector<unsigned char>(1,239);
 
-        bech32_hrp = "rmona";
+        bech32_hrp = "rhana";
 
         /* enable fallback fee on regtest */
         m_fallback_fee_enabled = true;
