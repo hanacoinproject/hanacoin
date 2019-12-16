@@ -136,7 +136,7 @@
     </message>
     <message>
         <source>Warning: Invalid Hanacoin address</source>
-        <translation>警告：萌奈币地址无效</translation>
+        <translation>警告：汉娜币地址无效</translation>
     </message>
     </context>
 <context>
