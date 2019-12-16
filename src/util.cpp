@@ -1246,6 +1246,10 @@ std::string CopyrightHolders(const std::string& strPrefix)
         strYear = strPrefix;
         strYear.replace(strYear.find("2013"), sizeof("2013")-1, "2014");
         strCopyrightHolders += "\n" + strYear + "The Vertcoin Developers";
+
+        strYear = strPrefix;
+        strYear.replace(strYear.find("2013"), sizeof("2013")-1, "2019");
+        strCopyrightHolders += "\n" + strYear + "The Hanacoin Developers";
     }
     return strCopyrightHolders;
 }
